@@ -1,0 +1,23 @@
+
+rss2mbox reads urls to RSS-feeds from stdin, fetch them and prints each
+article as an htmlized mail in a mbox format to stdout. HTML-rendering
+is delegated to the MUA.
+
+USAGE
+
+cat $HOME/.rssfeeds | rss2mbox >> $HOME/.mail/inbox
+
+A tip might be to run it from cron.
+
+
+REQUIREMENT
+
+ * Python (Known to work with 2.6.1)
+ * feedparser <http://www.feedparser.org/>
+
+LICENSE
+Copyright (c) 2009 Sebastian A. Liem <sebastian at liem dot se>
+
+Permission to use, copy, modify, and distribute this work for any purpose
+with or without fee is hereby granted.
+
